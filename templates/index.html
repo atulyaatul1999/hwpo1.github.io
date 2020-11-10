@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Hard Work Pays Off</title>
+</head>
+<center>
+<!--<center><h1>Marks Prediction </h1></h1></center>-->
+<!--<form method="post" action="/submit">-->
+
+
+<!-- Material form subscription -->
+<div class="card">
+
+    <h5 class="card-header info-color white-text text-center py-4">
+        <center><h1>MARKS PREDICTION</h1></center>
+    </h5>
+
+    <!--Card content-->
+    <div class="card-body px-lg-5">
+
+        <!-- Form -->
+        <form class="text-center" style="color: #757575;" action="/submit" method="post">
+
+            <center><h2>Let's evaluate your performance on the basis of your study time!</h2></center>
+
+<br>
+<br>
+<br>
+<br>
+        </div>
+            <center><h3>Enter your marks</h3></center>
+            <!-- Name -->
+            <div class="md-form mt-3">
+                <center><input type="text"  class="form-control" placeholder="Your study hours" name="hours"></center>
+
+            </div>
+<br>
+            <!-- Sign in button -->
+            <center><button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit">Predict</button></center>
+
+        </form>
+        <!-- Form -->
+
+    </div>
+
+</div>
+<!-- Material form subscription -->
+
+
+<br>
+
+{% if marks %}
+
+<center><h2> Your Marks   : <i> {{"{:.2f}".format(marks)}} </i></h2></center>
+
+	{% endif %}
+</body>
+</html>
